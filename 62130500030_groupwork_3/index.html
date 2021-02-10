@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Vue Js - HelloWorld App</title>
+
+  <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+  <!-- Using via Google Web Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- https://tailwindcss.com/docs/installation -->
+  <!-- Using Tailwind via CDN -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+  <!-- Vue CDN -->
+  <script src="https://unpkg.com/vue@next"></script>
+
+</head>
+
+<body>
+  <div id="app">
+
+    <section class="text-gray-700 body-font">
+      <div class="container px-8 py-48 mx-auto lg:px-4">
+        <div class="flex flex-wrap text-left">
+
+          <div class="px-8 py-6 lg:w-1/3 md:w-full">
+
+            <button v-on:click="heart">
+              <img v-bind:src="url1" class="rounded" width="300" /></button>
+            <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">{{ place1 }}
+            </h2>
+
+          </div>
+          <button v-on:click="heart"></button>
+          <div class="px-8 py-6 lg:w-1/3 md:w-full">
+            <img v-bind:src="url2" class="rounded" width="300" /></button>
+            <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">{{ place2 }}
+            </h2>
+
+          </div>
+          <div class="px-8 py-6 lg:w-1/3 md:w-full">
+            <img v-bind:src="url2" class="rounded" width="300" />
+            <h2 class="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">{{ place2 }}
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+
+  <!-- my main.js -->
+  <script src="./test2.js"></script>
+</body>
+
+</html>
